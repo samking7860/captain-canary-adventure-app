@@ -44,3 +44,14 @@ pipeline:
                 - AllErrors
               action:
                 type: StageRollback
+  variables:
+    - name: imageName
+      type: String
+      description: ""
+      required: false
+      value: us-central1-docker.pkg.dev/samad-450009/sam-gcr/samad-450009/app
+    - name: imageTag
+      type: String
+      description: ""
+      required: false
+      value: "7"
